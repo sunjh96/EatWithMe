@@ -9,7 +9,7 @@
         android:id="@+id/tvComm_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:text="writing_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/Text_DarkGray"
@@ -26,7 +26,7 @@
             android:id="@+id/tvComm_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="20dp"
             android:text="name"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/Text_DarkGray"/>

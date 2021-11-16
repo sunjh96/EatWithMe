@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/purple_200"
     android:orientation="vertical"
     android:focusable="true"
     android:focusableInTouchMode="true"
@@ -83,7 +82,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textStyle="bold" />
         </TableRow>
-    </TableLayout>
 
+    </TableLayout>
 
 </LinearLayout>

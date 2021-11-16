@@ -4,32 +4,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@drawable/actionbar1">
 
-            <Button
-                android:id="@+id/btnComm_back"
-                android:layout_width="20dp"
-                android:layout_height="30dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/back1"
-                android:padding="15dp"
-                android:text="확인"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
-                android:textStyle="bold" />
+            //메인으로 돌아가는 버튼
+        <Button
+            android:id="@+id/btnComm_back"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/back1"
+            android:padding="15dp"
+            android:text="확인"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="15dp"
-                android:layout_marginRight="35dp"
-                android:text="커뮤니티"
-                android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginRight="35dp"
+            android:text="커뮤니티"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -48,8 +49,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/actionbar1" >
+        android:orientation="horizontal" >
 
         <TextView
             android:layout_width="match_parent"
@@ -59,6 +59,7 @@
             android:text="글쓰기"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse" />
+
     </LinearLayout>
 
 </LinearLayout>

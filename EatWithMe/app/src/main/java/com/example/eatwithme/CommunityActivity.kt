@@ -99,7 +99,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
 }
 
 class MyItem(title : String, name : String, date : String, time : String){
