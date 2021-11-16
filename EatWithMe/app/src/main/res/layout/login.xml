@@ -6,7 +6,19 @@
     android:layout_height="match_parent"
     android:backgroundTint="@color/purple_200"
     android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/actionbar1"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/Text_DarkGray"
+        android:typeface="normal" />
 
     <TableLayout
         android:layout_width="match_parent"
