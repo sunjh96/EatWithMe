@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.community)
-
         //테스트
         writingarr.add(MyItem("hihi", "gg", "2021-09-09", "09:10"))
         writingarr.add(MyItem("hihi", "gg", "2021-09-09", "09:10"))

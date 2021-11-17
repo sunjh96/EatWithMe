@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
         android:background="@drawable/actionbar1"
+        android:padding="15dp"
         android:text="Sign Up"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/Text_DarkGray"
@@ -19,20 +20,21 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/people"/>
+            android:src="@drawable/people" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="회원가입"
             android:layout_marginTop="15dp"
+            android:text="회원가입"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:typeface="monospace"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:typeface="monospace" />
 
         <LinearLayout
             android:layout_width="match_parent"
