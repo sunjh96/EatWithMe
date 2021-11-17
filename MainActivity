@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         yogiyoButton.setOnClickListener {
             try {
-                startActivity(intentBaemin)
+                startActivity(intentYogiyo)
             } catch (e: Exception) {
                 val intentPlayStore = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + yogiyoPackage))
                 startActivity(intentPlayStore)
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
         coupangEatsButton.setOnClickListener {
             try {
-                startActivity(intentBaemin)
+                startActivity(intentCoupangEats)
             } catch (e: Exception) {
                 val intentPlayStore = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + coupangEatsPackage))
                 startActivity(intentPlayStore)
