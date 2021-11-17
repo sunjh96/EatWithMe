@@ -10,8 +10,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        //메인으로 돌아가는 버튼
-
+        //커뮤니티로 돌아가는 버튼
+        
         <Button
             android:id="@+id/btnWrite_back"
             android:layout_width="25dp"
