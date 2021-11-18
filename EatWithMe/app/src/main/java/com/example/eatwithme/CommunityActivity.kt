@@ -1,12 +1,11 @@
+/*
 package com.example.eatwithme
 
-import android.bluetooth.BluetoothDevice
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.annotation.RequiresApi
@@ -92,7 +91,7 @@ class MainActivity : AppCompatActivity() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
             val linearView = LayoutInflater.from(parent.context)
-                .inflate(R.layout.recyclerview_item, parent, false) as LinearLayout
+                .inflate(R.layout.comm_recyclerview_item, parent, false) as LinearLayout
 
             return MyViewHolder(linearView)
         }
@@ -101,20 +100,13 @@ class MainActivity : AppCompatActivity() {
 }
 
 class MyItem(title : String, name : String, date : String, time : String){
-    lateinit var title : String
-    lateinit var name : String
-    lateinit var date : String
-    lateinit var time : String
+    var title : String = title
+    var name : String = name
+    var date : String = date
+    var time : String = time
 
-    init{
-        this.title = title
-        this.name = name
-        this.date = date
-        this.time = time
-    }
-
-    //하단은 글쓰는 파일에서
-/*  
+*/
+/*    //하단은 글쓰는 파일에서
     @RequiresApi(Build.VERSION_CODES.O)
     fun date_to_stirng(){
         // 현재시간 가져오기
@@ -131,5 +123,8 @@ class MyItem(title : String, name : String, date : String, time : String){
         date = d_dateFormat.format(t_date)
         time = t_dateFormat.format(t_date)
 
-    }*/
+    }*//*
+
+
 }
+*/
