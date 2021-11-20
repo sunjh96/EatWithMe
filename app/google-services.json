@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "854464862084",
+    "firebase_url": "https://eatwithme-f4db1-default-rtdb.firebaseio.com",
+    "project_id": "eatwithme-f4db1",
+    "storage_bucket": "eatwithme-f4db1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854464862084:android:45641825a6a2de4f6defd1",
+        "android_client_info": {
+          "package_name": "com.cookandroid.eatwithme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854464862084-pvbr63vjafl9l1r8ed8vs3m6c8od5pp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cookandroid.eatwithme",
+            "certificate_hash": "5299903f9e9f750cbb8ac5850f296edc4d5310f8"
+          }
+        },
+        {
+          "client_id": "854464862084-bk5n8qu0tscqlhn8ecjqlr4m5hqts971.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1msLYfxSIQ8lwF9TBrEQkdGpTguoEmw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854464862084-bk5n8qu0tscqlhn8ecjqlr4m5hqts971.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
