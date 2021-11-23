@@ -13,7 +13,7 @@ import java.util.*
 
 class MyViewHolder(val linearView: LinearLayout) : RecyclerView.ViewHolder(linearView)
 
-class RecyclerViewAdapter(private val myDataset: ArrayList<MyItem>, private val Title : Int, private val Name : Int, private val Date : Int, private val Time : Int) :
+class RecyclerViewAdapter(private val myDataset: ArrayList<MyItem>, private val item : Int, private val Title : Int, private val Name : Int, private val Date : Int, private val Time : Int) :
     RecyclerView.Adapter<MyViewHolder>() {
     var mListener: OnItemClickListener? = null
 
@@ -44,12 +44,11 @@ class RecyclerViewAdapter(private val myDataset: ArrayList<MyItem>, private val 
                 mListener?.onClick(v, position)
             }
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val linearView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.comm_recyclerview_item, parent, false) as LinearLayout
+            .inflate(item, parent, false) as LinearLayout
 
         return MyViewHolder(linearView)
     }
@@ -60,7 +59,6 @@ class MyItem(title : String, name : String, date : String, time : String){
     var name : String = name
     var date : String = date
     var time : String = time
-
 
     //하단은 글쓰는 파일에서
     @RequiresApi(Build.VERSION_CODES.O)

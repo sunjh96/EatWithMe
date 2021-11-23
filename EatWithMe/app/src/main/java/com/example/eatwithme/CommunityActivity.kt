@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class CommunityActivity : AppCompatActivity() {
     private var writingarr = ArrayList<MyItem>()
 
     private lateinit var viewManager: RecyclerView.LayoutManager
@@ -32,10 +32,10 @@ class MainActivity : AppCompatActivity() {
 
 
         viewManager = LinearLayoutManager(this)
-        recyclerViewAdapter = RecyclerViewAdapter(writingarr, R.id.tvComm_title, R.id.tvComm_name, R.id.tvComm_date, R.id.tvComm_time)
+        recyclerViewAdapter = RecyclerViewAdapter(writingarr, R.layout.comm_recyclerview_item,R.id.tvComm_title, R.id.tvComm_name, R.id.tvComm_date, R.id.tvComm_time)
         recyclerViewAdapter.mListener = object : RecyclerViewAdapter.OnItemClickListener {
             override fun onClick(view: View, position: Int) {
-                val writng = writingarr[position]
+                val writing = writingarr[position]
             }
         }
 
