@@ -1,3 +1,4 @@
+/*
 package com.example.eatwithme
 
 import android.content.Intent
@@ -55,3 +56,11 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
+class MyItem(title : String, name : String, date : String, time : String) {
+    var title: String = title
+    var name: String = name
+    var date: String = date
+    var time: String = time
+}
+
+*/
