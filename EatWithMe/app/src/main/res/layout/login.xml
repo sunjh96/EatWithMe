@@ -16,6 +16,7 @@
         android:background="@drawable/actionbar1"
         android:padding="15dp"
         android:text="Login"
+        android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/Text_DarkGray"
         android:typeface="normal" />

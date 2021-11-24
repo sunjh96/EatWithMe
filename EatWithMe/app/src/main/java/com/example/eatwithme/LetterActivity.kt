@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.letter)
 
         //테스트
+
         var letter_contents : TextView = findViewById(R.id.tvLetter_contents)
         letter_contents.text = "안녕하세요ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"
         writingarr.add(MyItem("hi", "hh", "2021-09-09", "09:09"))
