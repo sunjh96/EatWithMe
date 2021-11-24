@@ -12,13 +12,11 @@
 
         //커뮤니티로 돌아가는 버튼
         <Button
-            android:id="@+id/btnLetter_back"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/back2"
+            android:id="@+id/btnComm_back"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/back1"
             android:padding="15dp" />
 
         <TextView
@@ -93,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/actionbar2"
                 android:gravity="right"
-                android:paddingBottom="10dp">
+                android:paddingBottom="20dp">
 
                 <Button
                     android:layout_width="wrap_content"
@@ -139,10 +137,9 @@
                     android:scrollbars="vertical" />
 
             </LinearLayout>
+
         </LinearLayout>
-
-
-
+        
     </ScrollView>
 
 

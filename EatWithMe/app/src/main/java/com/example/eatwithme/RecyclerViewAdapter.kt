@@ -21,7 +21,6 @@ class RecyclerViewAdapter(private val myDataset: ArrayList<MyItem>, private val 
         fun onClick(view: View, position: Int)
     }
 
-
     override fun getItemCount(): Int {
         return myDataset.size
     }
