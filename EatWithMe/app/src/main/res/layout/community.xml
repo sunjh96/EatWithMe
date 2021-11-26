@@ -50,7 +50,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
+        <Button
+            android:id="@+id/btnComm_write"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#285430"

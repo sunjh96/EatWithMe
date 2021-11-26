@@ -69,6 +69,7 @@
         //로그아웃하면 로그인 창으로 되돌아가기
 
         <TextView
+            android:id="@+id/tvMain_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button4"
@@ -78,8 +79,8 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/Text_DarkGray" />
 
-
         <TextView
+            android:id="@+id/tvMain_myinfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#404040"

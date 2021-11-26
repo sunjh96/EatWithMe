@@ -43,18 +43,4 @@
 
     </LinearLayout>
 
-<!--        <TableRow
-            android:layout_marginTop="10dp"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/btnSignup"
-                android:background="@drawable/button3"
-                android:text="회원가입"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textStyle="bold" />
-        </TableRow>
-
-    </TableLayout>-->
-
 </LinearLayout>

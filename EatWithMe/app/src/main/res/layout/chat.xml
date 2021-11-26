@@ -78,6 +78,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingBottom="20dp">
+
         <Button
             android:id="@+id/baeminButton"
             android:layout_width="0dp"
@@ -104,6 +105,26 @@
             android:layout_gravity="bottom"
             android:background="#00ff0000"
             android:drawableBottom="@drawable/sizecoupangeats" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        //한 번이라도 채팅하면 거래 확인 활성화
+        <TextView
+            android:id="@+id/tvChat_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#404040"
+            android:padding="15dp"
+            android:text="거래 확인"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+            android:enabled="false"/>
 
     </LinearLayout>
 

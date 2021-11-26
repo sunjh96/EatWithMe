@@ -8,11 +8,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.util.ArrayList
 
-class MainActivity : AppCompatActivity() {
+class LetterActivity : AppCompatActivity() {
     private var writingarr = ArrayList<MyItem>()
 
     private lateinit var viewManager: RecyclerView.LayoutManager
-    private lateinit var recyclerViewAdapter: RecyclerViewAdapter
+    private lateinit var recyclerViewAdapter: RecyclerViewAdapter_chat_letter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         writingarr.add(MyItem("hihi", "gg", "2021-09-09", "09:10"))
 
         viewManager = LinearLayoutManager(this)
-        recyclerViewAdapter = RecyclerViewAdapter(
+        recyclerViewAdapter = RecyclerViewAdapter_chat_letter(
             writingarr,
             R.layout.chat_recycleview_item,
             R.id.tvChat_content,
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             R.id.tvChat_date,
             R.id.tvChat_time
         )
-        recyclerViewAdapter.mListener = object : RecyclerViewAdapter.OnItemClickListener {
+        recyclerViewAdapter.mListener = object : RecyclerViewAdapter_chat_letter.OnItemClickListener {
             override fun onClick(view: View, position: Int) {
                 val writing = writingarr[position]
             }
