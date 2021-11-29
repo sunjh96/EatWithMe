@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "694804321514",
+    "firebase_url": "https://eatwithme-d081c-default-rtdb.firebaseio.com",
+    "project_id": "eatwithme-d081c",
+    "storage_bucket": "eatwithme-d081c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694804321514:android:aeb7138aae71b8329fb393",
+        "android_client_info": {
+          "package_name": "com.exampleboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694804321514-aeik3t9p28k88fcpbs5tt4p272avcda4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCwBUb7m6iXA3YtVRIs4zpHjTF-95AJTQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694804321514-aeik3t9p28k88fcpbs5tt4p272avcda4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
