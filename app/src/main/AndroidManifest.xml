@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cookandroid.eatwithme"
+    tools:ignore="CoarseFineLocation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature android:required="true" android:glEsVersion="0x00020000"/>
+    <permission
+        android:name="com.cookandroid.eatwithme.permission.MAPS_RECEIVE"
+        android:label="signature" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <meta-data android:name ="com.google.android.gms.version" android:value ="@integer.google_play_services_version"/>
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@drawable/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="4e82ec43b7d6bf641f2af26b87d17364"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main" />
+        <activity android:name=".Information" />
+        <activity android:name=".Map" />
+        <activity android:name=".Rating" />
+        <activity android:name=".Board" />
+        <activity android:name=".AddPostActivity" />
+        <activity android:name=".PostDetailActivity"/>
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".EditPostActivity" />
+        <activity android:name=".RatingActivity" />
+        <activity android:name=".MapActivity" />
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao4e82ec43b7d6bf641f2af26b87d17364" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyATJs2zgmObcgoq3LZ-s_slWBiZrsFsZms"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+</manifest>
+

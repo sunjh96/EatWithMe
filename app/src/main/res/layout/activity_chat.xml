@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionbar1"
+        android:orientation="horizontal">
+
+        //글 보이는 창으로 돌아가는 버튼
+
+        <Button
+            android:id="@+id/btnComm_back"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/back1"
+            android:padding="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:padding="15dp"
+            android:text="채팅창"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </LinearLayout>
+
+    //채팅
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/Chat_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/button4"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/tvChat_mycontent"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:hint="입력"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/Text_DarkGray" />
+
+        <Button
+            android:id="@+id/btnChat_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button1"
+            android:text="보내기"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/baeminButton"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/sizebaemin" />
+
+        <Button
+            android:id="@+id/yogiyoButton"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/sizeyogiyo" />
+
+        <Button
+            android:id="@+id/coupangEatsButton"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/sizecoupangeats" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        //한 번이라도 채팅하면 거래 확인 활성화
+        <Button
+            android:id="@+id/tvChat_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#404040"
+            android:padding="15dp"
+            android:text="평가 하기"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>
