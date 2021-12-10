@@ -1,5 +1,6 @@
 package com.cookandroid.eatwithme
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -63,6 +64,7 @@ class AddPostActivity : AppCompatActivity() {
                             userRef.child(count.toString())
                                 .child("title").setValue(title)
                             userRef.child("count").setValue(count + 1)
+
                         }.addOnFailureListener{
                             Log.e("firebase", "Error getting data", it)
                         }

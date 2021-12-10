@@ -157,6 +157,7 @@ class PostDetailActivity : AppCompatActivity() {
                         var intent = Intent(applicationContext, MapActivity::class.java)
                         intent.putExtra("lat", lat)
                         intent.putExtra("lon", lon)
+                        intent.putExtra("writer",kakao_name)
                         startActivity(intent)
                     }
                 }
@@ -192,6 +193,9 @@ class PostDetailActivity : AppCompatActivity() {
                                         userRef.child(i.toString()).child("content").get().addOnSuccessListener{
                                             if("${it.value}" == postcontent){
                                                 intent_edit.putExtra("parent_key",i)
+                                                intent_edit.putExtra("content_edit", postcontent)
+                                                intent_edit.putExtra("title_edit", posttitle)
+                                                intent_edit.putExtra("address_edit", postaddress)
                                                 startActivity(intent_edit)
                                                 finish()
                                             }
@@ -203,7 +207,6 @@ class PostDetailActivity : AppCompatActivity() {
                     }.addOnFailureListener {
                         Log.e("firebase", "Error getting data", it)
                     }
-                Toast.makeText(this@PostDetailActivity, "게시글이 수정 되었습니다.", Toast.LENGTH_SHORT).show()
             }
         })
 
@@ -226,7 +229,6 @@ class PostDetailActivity : AppCompatActivity() {
                                                                     .removeValue()
                                                                 userRef.child("delete")
                                                                     .setValue(delete + 1)
-                                                                finish()
                                                             }
                                                         }
                                                 }
@@ -238,6 +240,7 @@ class PostDetailActivity : AppCompatActivity() {
                         Log.e("firebase", "Error getting data", it)
                     }
                 Toast.makeText(this@PostDetailActivity, "게시글이 삭제 되었습니다.", Toast.LENGTH_SHORT).show()
+                finish()
             }
         })
     }

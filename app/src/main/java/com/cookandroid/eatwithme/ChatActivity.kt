@@ -16,7 +16,6 @@ class ChatActivity : AppCompatActivity() {
     private lateinit var Chat_View : ListView
     private lateinit var tvChat_mycontent : EditText
     private lateinit var btnChat_send : Button
-    //private lateinit var databaseRef: DatabaseReference
 
     var list = mutableListOf<String>()
 
@@ -40,9 +39,6 @@ class ChatActivity : AppCompatActivity() {
         CHAT_NAME = intent.getStringExtra("chat_name").toString()
         KAKAO_NAME = intent.getStringExtra("kakao_name").toString()
 
-        //databaseRef = FirebaseDatabase.getInstance().reference
-
-        var list1 = ArrayList<String>()
         userRef.addValueEventListener(object:ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 for (rest in snapshot.child(CHAT_NAME).children){
@@ -54,10 +50,6 @@ class ChatActivity : AppCompatActivity() {
                 println("loadItem:onCancelled : ${error.toException()}")
             }
         })
-
-
-
-
 
         openChat(CHAT_NAME)
 
@@ -72,7 +64,6 @@ class ChatActivity : AppCompatActivity() {
             }
         });
 
-        //if ( isChecked == true)
         tvChat_check.isEnabled = true
 
         tvChat_check.setOnClickListener(object : View.OnClickListener {

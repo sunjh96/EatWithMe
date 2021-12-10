@@ -1,22 +1,21 @@
 package com.cookandroid.eatwithme
 
+import android.graphics.Bitmap
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentActivity
-import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.OnMapReadyCallback
-import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.*
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
 class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     lateinit var mMap : GoogleMap
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
-        mapFragment.getMapAsync(this@MapActivity)
+        setContentView(R.layout.activity_map)
+        var mapFragment = supportFragmentManager.findFragmentById(R.id.map2) as SupportMapFragment
+        mapFragment.getMapAsync(this)
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
@@ -24,9 +23,15 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         var lat : Double? = intent.getExtras()?.getDouble("lat")
         var lon : Double? = intent.getExtras()?.getDouble("lon")
         var loc : LatLng = LatLng(lat!!, lon!!)
+        var writer : String? = intent.getStringExtra("writer")
 
         var makerOptions : MarkerOptions = MarkerOptions()
-        makerOptions.position(loc).title("접선지")
+        makerOptions.position(loc).title(writer)
+        var bitmapdraw : BitmapDrawable = resources.getDrawable(R.drawable.writer) as BitmapDrawable
+        var b : Bitmap = bitmapdraw.bitmap
+        var smallMarker : Bitmap = Bitmap.createScaledBitmap(b,200,200,false)
+        makerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker))
+        makerOptions.alpha(0.7f)
 
         mMap.addMarker(makerOptions)
 
