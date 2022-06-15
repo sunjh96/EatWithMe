@@ -51,10 +51,10 @@
 
 https://user-images.githubusercontent.com/35713465/173931428-8174fda1-5ec3-4ada-8dda-4ca91f2c29a8.mp4
 
-## 🗂  DB Schema
+## 🗂️  DB Schema
 ![eatwithme-db](https://user-images.githubusercontent.com/35713465/173918126-cff02868-e0f6-4509-809a-f0deadca18a8.png)
 
-## 🛠 Technology Stack(s)
+## 🛠️ Technology Stack(s)
 - Language : Kotlin
 - API : Google / Kakao
 - DB : Firebase
