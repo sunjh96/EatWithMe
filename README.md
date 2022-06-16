@@ -58,7 +58,7 @@ https://user-images.githubusercontent.com/35713465/173931428-8174fda1-5ec3-4ada-
 - Language : Kotlin
 - API : Google / Kakao
 - DB : Firebase
-- Tool : Android Studil
+- Tool : Android Studio
 
 ## 👪 Members
 - 정장오 : 프로젝트 설계 / 카카오 로그인 / 유저 정보 / 유저 별점 평가 / ReadMe 작성
