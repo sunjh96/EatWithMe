@@ -5,7 +5,7 @@
 
 처음으로 Kotlin 언어를 사용해 봤으며 Kakao API, Google API, Firebase를 사용하면서 앱 개발의 기본 지식을 쌓을 수 있었던 프로젝트입니다. 추후 크로스 플랫폼을 위하여 ReactNative or Flutter를 이용해 재개발 후 배포까지 할 예정입니다.
 
-### * 주요 기능
+### 주요 기능
 - <input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked="" style="margin-left : 0px;"> 카카오 계정 로그인
 - <input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked="" style="margin-left : 0px;"> 유저의 별점 및 매칭 횟수 확인
 - <input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked="" style="margin-left : 0px;"> 커뮤니티 게시글 생성/수정/삭제
